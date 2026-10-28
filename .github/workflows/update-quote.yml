@@ -1,0 +1,36 @@
+name: Update daily quote
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # every day at 00:00 UTC
+  workflow_dispatch:       # lets you run it manually from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  update-quote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Pick a new quote
+        run: python .github/scripts/update_quote.py
+
+      - name: Commit if README changed
+        run: |
+          if [ -z "$(git status --porcelain README.md assets/quote.svg)" ]; then
+            echo "No change."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md assets/quote.svg
+          git commit -m "chore: update daily quote"
+          git push

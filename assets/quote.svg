@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="182" viewBox="0 0 760 182" role="img" aria-label="First, solve the problem. Then, write the code. - John Johnson">
+  <defs>
+    <clipPath id="card"><rect x="1" y="1" width="758" height="180" rx="12"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="758" height="180" rx="12" fill="#0d1117" stroke="#0f5132" stroke-width="2"/>
+  <g clip-path="url(#card)">
+    <rect x="1" y="1" width="758" height="40" fill="#161b22"/>
+    <rect x="1" y="40" width="758" height="1" fill="#0f5132"/>
+  </g>
+  <circle cx="28" cy="21" r="6" fill="#0f5132"/>
+  <circle cx="50" cy="21" r="6" fill="#39d353" opacity="0.7"/>
+  <circle cx="72" cy="21" r="6" fill="#00ff9c"/>
+  <g font-family="'JetBrains Mono', 'Fira Code', 'SFMono-Regular', Consolas, 'Courier New', monospace">
+    <text x="380" y="26" font-size="13" text-anchor="middle" fill="#8b949e">fortune.sh</text>
+    <text x="40" y="74" font-size="16" fill="#00ff9c">$ <tspan fill="#8b949e">fortune --dev</tspan></text>
+    <text x="40" y="112" font-size="18" fill="#c9d1d9">First, solve the problem. Then, write the code.</text>
+    <text x="40" y="152" font-size="16" font-weight="700" fill="#00ff9c">// <tspan fill="#39d353">John Johnson</tspan></text>
+    <rect x="194" y="138" width="9" height="17" fill="#00ff9c" opacity="0.85"/>
+  </g>
+</svg>
