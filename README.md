@@ -113,7 +113,7 @@ Live numbers from my GitHub activity.
 ## `$` fortune
 
 <!-- QUOTE:START -->
-<p align="center"><img src="assets/quote.svg?v=2ae04860" alt="First, solve the problem. Then, write the code. - John Johnson"/></p>
+<p align="center"><img src="assets/quote.svg?v=2da31511" alt="Simplicity is prerequisite for reliability. - Edsger W. Dijkstra"/></p>
 <!-- QUOTE:END -->
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=rect&color=0:0d1117,50:00ff9c,100:0d1117&height=2" alt=""/>
